@@ -20,3 +20,13 @@ if __name__ == '__main__':
 
     for str in ast.accept(TypeChecker()):
         print str
+
+# jesli wizytor TypeChecker z implementacji w poprzednim lab korzystal z funkcji accept
+    # to nazwa tej ostatniej dla Interpretera powinna zostac zmieniona, np. na accept2 ( ast.accept2(Interpreter()) )
+    # tak aby rozne funkcje accept z roznych implementacji wizytorow nie kolidowaly ze soba
+    #ast.accept(Interpreter())
+
+    # in future
+    # ast.accept(OptimizationPass1())
+    # ast.accept(OptimizationPass2())
+    # ast.accept(CodeGenerator())
